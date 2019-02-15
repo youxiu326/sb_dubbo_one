@@ -47,8 +47,8 @@ public class DubboRecordService implements IDubboRecordService{
      */
     @Path("push")
     @POST
-    @Consumes(value = MediaType.APPLICATION_JSON)
-    @Produces(value = MediaType.APPLICATION_JSON)
+    @Consumes(value = MediaType.APPLICATION_JSON)//请求格式
+    @Produces(value = MediaType.APPLICATION_JSON)//响应格式
     public BaseResponse pushOrder(PushOrderDto dto) {
         if (dto.getItemId()==null || dto.getItemId()<=0 || Strings.isNullOrEmpty(dto.getCustomerName())
                 || dto.getTotal()==null){
