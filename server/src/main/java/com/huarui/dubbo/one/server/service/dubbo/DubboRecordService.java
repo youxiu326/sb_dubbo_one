@@ -42,6 +42,18 @@ public class DubboRecordService implements IDubboRecordService{
 
 
     /**
+     * http://127.0.0.1:9013/v1/record/push
+     *
+     *
+     {
+     "itemId":"1",
+     "total":"2",
+     "customerName":"lihui"
+     }
+     *
+     */
+
+    /**
      * 下单服务
      * @param dto
      */
